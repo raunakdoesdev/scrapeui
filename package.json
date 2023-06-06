@@ -18,7 +18,6 @@
     "html-webpack-plugin": "5.5.0",
     "nodemon": "^2.0.22",
     "serve": "14.2.0",
-    "tailwindcss": "^3.3.2",
     "twin.macro": "^3.3.1",
     "typescript": "4.9.4",
     "webpack": "5.75.0",
@@ -26,7 +25,6 @@
     "webpack-dev-server": "4.11.1"
   },
   "scripts": {
-    "postinstall": "mkdir -p static && cp -R node_modules/@rdkit/rdkit/dist/RDKit_* static",
     "dev": "concurrently --kill-others \"nodemon \" \"pnpm run serve\"",
     "build": "webpack --mode production",
     "serve": "serve dist -C -p ${PORT:-8080}",
@@ -35,16 +33,9 @@
   "dependencies": {
     "@ant-design/icons": "^4.1.2",
     "@oloren/core": "^0.1.6",
-    "@rdkit/rdkit": "2023.3.1-1.0.1",
     "antd": "^5.5.2",
-    "draft-js": "^0.11.7",
-    "ketcher-core": "^2.9.0",
-    "ketcher-react": "^2.9.0",
-    "ketcher-standalone": "^2.9.0",
-    "molstar": "^3.35.0",
     "process": "^0.11.10",
     "react": "18.2.0",
-    "react-contexify": "^6.0.0",
     "react-dom": "18.2.0",
     "style-loader": "^3.3.3",
     "styled-components": "^5.3.11"
