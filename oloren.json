@@ -1,0 +1,53 @@
+{
+  "$schema": "https://oloren-ai.github.io/schema/extensionconfig.schema.json",
+  "name": "testing",
+  "version": "0.0.0",
+  "nodes": [
+    {
+      "name": "Input Node",
+      "path": "./src/nodes/input/InputBase.tsx",
+      "num_inputs": 0,
+      "num_outputs": 1,
+      "applet": {
+        "path": "./src/nodes/input/InputApplet.tsx"
+      }
+    },
+    {
+      "name": "Display Molecule",
+      "path": "./src/nodes/displaymol/Base.tsx",
+      "num_inputs": 0,
+      "num_outputs": 1,
+      "applet": {
+        "path": "./src/nodes/displaymol/Applet.tsx"
+      }
+    },
+    {
+      "name": "Draw Molecule",
+      "path": "./src/nodes/ketcher/Base.tsx",
+      "num_inputs": 0,
+      "num_outputs": 1,
+      "applet": {
+        "path": "./src/nodes/ketcher/Applet.tsx",
+        "continue": false
+      }
+    },
+    {
+      "name": "Show Protein",
+      "path": "./src/nodes/molstar/Base.tsx",
+      "initial_data": "1LOL",
+      "num_inputs": 0,
+      "num_outputs": 1,
+      "applet": {
+        "path": "./src/nodes/molstar/Applet.tsx"
+      }
+    },
+    {
+      "name": "Backend Example",
+      "path": "./src/nodes/submitapplet/Base.tsx",
+      "applet": {
+        "path": "./src/nodes/submitapplet/Applet.tsx",
+        "hidden": true
+      }
+    }
+  ]
+}
