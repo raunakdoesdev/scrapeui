@@ -11,15 +11,6 @@
       "applet": {
         "path": "./src/nodes/searchresults/Applet.tsx"
       }
-    },
-    {
-      "name": "Input",
-      "path": "./src/nodes/input/Base.tsx",
-      "num_inputs": 0,
-      "num_outputs": 1,
-      "applet": {
-        "path": "./src/nodes/input/Applet.tsx"
-      }
     }
   ]
 }
